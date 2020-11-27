@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<head><title>Register</title>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #CD5C5C;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 50px;
+  background-color: #E9967A;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #CD5C5C;
+  color: black;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.modal {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+ <script src=registration.js></script>
+     
+ 
+</head>
+<body>
+
+<div class="modal">
+  <div class="container">
+    <h1>TECHOVID</h1>
+    <p>Kindly fill this.</p>
+    <hr>
+
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter name" name="name" id="t1" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="t2" required>
+
+    <label for="branch"><b>Branch</b></label>
+    <input type="text" placeholder="Enter branch" name="Branch" id="t3" required>
+
+    <label for="college"><b>College/University</b></label>
+    <input type="text" placeholder="Enter college/university" name="college" id="t4" required>
+ 
+    <label for="state"><b>State</b></label>
+    <input type="text" placeholder="Enter state" name="state" id="t5" required>
+
+    <label for="address"><b>Address</b></label>
+    <input type="text" placeholder="Enter address" name="address" id="t6" required>
+
+    <label for="age"><b>Age</b></label>
+    <input type="text" placeholder="Enter age" name="age" id="t7" required>
+
+    <label for="phno"><b>Phone number</b></label>
+    <input type="text" placeholder="Enter phone number" name="phno" id="t8" required>
+
+
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter username" name="uname" id="t9" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="t10" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="t11" required>
+    <hr>
+   
+   <button type="submit" class="registerbtn" onclick="registration()" />Register</button>
+   
+   
+ 
+ 
+</div>
+
+</body>
+</html>
