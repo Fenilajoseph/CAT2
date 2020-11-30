@@ -109,6 +109,6 @@ alert ('Password max length is 12');
 else
 {                            
                alert('Thank You for Login');
-  window.location="index.html";
+  window.location="dom.html";
 }
 }
